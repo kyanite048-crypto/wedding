@@ -155,11 +155,22 @@ END:VCALENDAR`;
           </div>
           <div className="flex items-center space-x-3">
             <Clock className="w-5 h-5 text-rose-500" />
-            <span>{eventData.startTime?.substring(0, 5) || eventData.startTime} - {eventData.endTime?.substring(0, 5) || eventData.endTime} EAT</span>
+            <span>{eventData.startTime?.substring(0, 5) || eventData.startTime} Local Time</span>
           </div>
           <div className="flex items-center space-x-3">
             <MapPin className="w-5 h-5 text-rose-500" />
-            <span>{eventData.location}</span>
+            {eventData.venueLink ? (
+              <a
+                href={eventData.venueLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-rose-500 hover:text-rose-600 underline transition-colors"
+              >
+                {eventData.location}
+              </a>
+            ) : (
+              <span>{eventData.location}</span>
+            )}
           </div>
         </div>
       </motion.div>
