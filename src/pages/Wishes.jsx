@@ -57,7 +57,7 @@ export default function Wishes() {
     // Fetch wishes on component mount
     useEffect(() => {
         if (!uid) {
-            setError('This is the day the Lord has made; let us rejoice and be glad in it.');
+            setError('This is the day the Lord has made; let us rejoice and be glad in it. — Psalm 118:24');
             setIsLoading(false);
             return;
         }
@@ -85,7 +85,7 @@ export default function Wishes() {
         if (!newWish.trim() || !guestName.trim()) return;
 
         if (!uid) {
-            alert('This is the day the Lord has made; let us rejoice and be glad in it.');
+            alert('This is the day the Lord has made; let us rejoice and be glad in it. — Psalm 118:24');
             return;
         }
 

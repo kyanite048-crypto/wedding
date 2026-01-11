@@ -79,7 +79,7 @@ export default function Gifts() {
                     >
                         {/* Main Message */}
                         <p className="text-gray-600 leading-relaxed">
-                            Every good and perfect gift is from above, coming down from the Father of lights.
+                            Every good and perfect gift is from above, coming down from the Father of lights. — James 1:17
                         </p>
 
                         {/* Mobile Money Section */}
