@@ -4,29 +4,29 @@ const config = {
     title: "Sam & Feb",
     // Opening message/description of the invitation
     description:
-      "We are getting married and invite you to celebrate this special moment with us.",
+      "Join us in Addis Ababa as we celebrate our forever love story.",
     // Groom's name
     groomName: "Sam",
     // Bride's name
     brideName: "Feb",
     // Groom's parents names
-    parentGroom: "Bapak Groom & Ibu Groom",
+    parentGroom: "Mr. & Mrs. Samuel Smith",
     // Bride's parents names
-    parentBride: "Bapak Bride & Ibu Bride",
+    parentBride: "Mr. & Mrs. February Johnson",
     // Wedding date (format: YYYY-MM-DD)
     date: "2026-01-25",
     // Google Maps link for location (short clickable link)
-    maps_url: "https://goo.gl/maps/abcdef",
+    maps_url: "https://maps.app.goo.gl/abcdef",
     // Google Maps embed code to display map on website
     // How to get: open Google Maps → select location → Share → Embed → copy link
     maps_embed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0000000000005!2d106.8270733147699!3d-6.175392995514422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4f1b6d7b1e7%3A0x2e69f4f1b6d7b1e7!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1633666820004!5m2!1sid!2sid",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15885.47480429288!2d38.7466!3d9.0222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef60c46a7%3A0x36e1c1b4a3e4a3e4!2sAddis%20Ababa%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1633666820004!5m2!1sen!2sus",
     // Event time (free format, example: "10:00 - 12:00 WIB")
-    time: "16:16 - 17:30 WIB",
+    time: "4:00 PM - 6:00 PM EAT",
     // Venue/building name
-    location: "Grand Ballroom, Hotel Majesty",
+    location: "Grand Ballroom, Sheraton Addis",
     // Full address of the wedding venue
-    address: "Jl. Jend. Sudirman No.1, Jakarta",
+    address: "Kirkos Subcity, Addis Ababa, Ethiopia",
     // Image that appears when link is shared on social media
     ogImage: "/images/og-image.jpg",
     // Icon that appears in browser tab
@@ -35,7 +35,7 @@ const config = {
     agenda: [
       {
         // First event name
-        title: "Akad Nikah",
+        title: "Wedding Ceremony",
         // Event date (format: YYYY-MM-DD)
         date: "2026-01-25",
         // Start time (format: HH:MM)
@@ -43,18 +43,18 @@ const config = {
         // End time (format: HH:MM)
         endTime: "17:30",
         // Event venue
-        location: "Grand Ballroom, Hotel Majesty",
+        location: "Grand Ballroom, Sheraton Addis",
         // Full address
-        address: "Jl. Jend. Sudirman No.1, Jakarta",
+        address: "Kirkos Subcity, Addis Ababa, Ethiopia",
       },
       {
         // Second event name
-        title: "Resepsi Nikah",
+        title: "Wedding Reception",
         date: "2026-01-25",
         startTime: "16:16",
         endTime: "17:30",
-        location: "Grand Ballroom, Hotel Majesty",
-        address: "Jl. Jend. Sudirman No.1, Jakarta",
+        location: "Grand Ballroom, Sheraton Addis",
+        address: "Kirkos Subcity, Addis Ababa, Ethiopia",
       }
       // You can add more agenda items with the same format
     ],
@@ -73,18 +73,24 @@ const config = {
 
     // List of bank accounts for digital envelope/gifts
     banks: [
+      // Commercial Bank of Ethiopia (CBE)
       {
         // Bank name
-        bank: "Bank Central Asia",
+        bank: "Commercial Bank of Ethiopia",
         // Account number
-        accountNumber: "1234567890",
+        accountNumber: "1000123456789",
         // Account holder name (all uppercase)
         accountName: "SAM",
       },
       {
-        bank: "Bank Mandiri",
-        accountNumber: "0987654321",
+        bank: "Dashen Bank",
+        accountNumber: "2000987654321",
         accountName: "FEB",
+      },
+      {
+        bank: "Awash Bank",
+        accountNumber: "3000456789123",
+        accountName: "SAM & FEB",
       }
       // You can add more banks with the same format
     ]

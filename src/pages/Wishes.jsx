@@ -49,9 +49,9 @@ export default function Wishes() {
     }, []);
 
     const options = [
-        { value: 'ATTENDING', label: 'Ya, saya akan hadir' },
-        { value: 'NOT_ATTENDING', label: 'Tidak, saya tidak bisa hadir' },
-        { value: 'MAYBE', label: 'Mungkin, saya akan konfirmasi nanti' }
+        { value: 'ATTENDING', label: 'Yes, I will attend' },
+        { value: 'NOT_ATTENDING', label: 'No, I cannot attend' },
+        { value: 'MAYBE', label: 'Maybe, I will confirm later' }
     ];
 
     // Fetch wishes on component mount
@@ -113,7 +113,7 @@ export default function Wishes() {
         } catch (err) {
             console.error('Error submitting wish:', err);
             setError(err.message);
-            alert('Gagal mengirim pesan: ' + err.message);
+            alert('Failed to send message: ' + err.message);
         } finally {
             setIsSubmitting(false);
         }
@@ -149,7 +149,7 @@ export default function Wishes() {
                         transition={{ delay: 0.2 }}
                         className="inline-block text-rose-500 font-medium"
                     >
-                        Kirimkan Doa dan Harapan Terbaik Anda
+                        Send Your Best Wishes and Prayers
                     </motion.span>
 
                     <motion.h2
@@ -158,7 +158,7 @@ export default function Wishes() {
                         transition={{ delay: 0.3 }}
                         className="text-4xl md:text-5xl font-serif text-gray-800"
                     >
-                        Pesan dan Doa
+                        Messages and Prayers
                     </motion.h2>
 
                     {/* Decorative Divider */}
@@ -179,7 +179,7 @@ export default function Wishes() {
                     {isLoading && (
                         <div className="flex justify-center items-center py-12">
                             <Loader2 className="w-8 h-8 text-rose-500 animate-spin" />
-                            <span className="ml-3 text-gray-600">Memuat pesan...</span>
+                            <span className="ml-3 text-gray-600">Loading messages...</span>
                         </div>
                     )}
 
@@ -192,7 +192,7 @@ export default function Wishes() {
                     {!isLoading && !error && wishes.length === 0 && (
                         <div className="text-center py-12">
                             <MessageCircle className="w-12 h-12 text-gray-300 mx-auto mb-4" />
-                            <p className="text-gray-500">Belum ada pesan. Jadilah yang pertama!</p>
+                            <p className="text-gray-500">No messages yet. Be the first!</p>
                         </div>
                     )}
 
@@ -301,7 +301,7 @@ export default function Wishes() {
                                 >
                                     <div className="flex items-center space-x-2 text-gray-500 text-sm mb-1">
                                         <Calendar className="w-4 h-4" />
-                                        <span>Apakah kamu hadir?</span>
+                                        <span>Will you attend?</span>
                                     </div>
 
                                     {/* Custom Select Button */}
@@ -313,7 +313,7 @@ export default function Wishes() {
                                         <span className={attendance ? 'text-gray-700' : 'text-gray-400'}>
                                             {attendance ?
                                                 options.find(opt => opt.value === attendance)?.label
-                                                : 'Pilih kehadiran...'}
+                                                : 'Select attendance...'}
                                         </span>
                                         <ChevronDown
                                             className={`w-5 h-5 text-gray-400 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''
@@ -356,10 +356,10 @@ export default function Wishes() {
                                 <div className="space-y-2">
                                     <div className="flex items-center space-x-2 text-gray-500 text-sm mb-1">
                                         <MessageCircle className="w-4 h-4" />
-                                        <span>Harapan kamu</span>
+                                        <span>Your wishes</span>
                                     </div>
                                     <textarea
-                                        placeholder="Kirimkan harapan dan doa untuk kedua mempelai..."
+                                        placeholder="Share your wishes and prayers for the couple..."
                                         value={newWish}
                                         onChange={(e) => setNewWish(e.target.value)}
                                         className="w-full h-32 p-4 rounded-xl bg-white/50 border border-rose-100 focus:border-rose-300 focus:ring focus:ring-rose-200 focus:ring-opacity-50 resize-none transition-all duration-200"
@@ -387,7 +387,7 @@ export default function Wishes() {
                                     ) : (
                                         <Send className="w-4 h-4" />
                                     )}
-                                    <span>{isSubmitting ? 'Sedang Mengirim...' : 'Kirimkan Doa'}</span>
+                                    <span>{isSubmitting ? 'Sending...' : 'Send Prayer'}</span>
                                 </motion.button>
                             </div>
                         </div>

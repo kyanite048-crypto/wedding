@@ -25,7 +25,7 @@ export default function Location() {
             viewport={{ once: true }}
             className="inline-block text-rose-500 font-medium"
           >
-            Lokasi Acara
+            Wedding Location
           </motion.span>
 
           <motion.h2
@@ -35,7 +35,7 @@ export default function Location() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-serif text-gray-800"
           >
-            Lokasi
+            Location
           </motion.h2>
 
           {/* Decorative Divider */}
@@ -50,6 +50,17 @@ export default function Location() {
             <MapPin className="w-5 h-5 text-rose-400" />
             <div className="h-[1px] w-12 bg-rose-200" />
           </motion.div>
+
+          {/* Location Description */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            viewport={{ once: true }}
+            className="text-gray-600 max-w-md mx-auto mb-8 leading-relaxed"
+          >
+            Addis Ababa, the heart of Ethiopia, will host our celebration — a city full of warmth, culture, and unforgettable moments.
+          </motion.p>
         </motion.div>
 
         {/* Location Content */}

@@ -32,10 +32,10 @@ export default function Hero() {
 
             if (difference > 0) {
                 timeLeft = {
-                    hari: Math.floor(difference / (1000 * 60 * 60 * 24)),
-                    jam: Math.floor((difference / (1000 * 60 * 60)) % 24),
-                    menit: Math.floor((difference / 1000 / 60) % 60),
-                    detik: Math.floor((difference / 1000) % 60),
+                    days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                    hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+                    minutes: Math.floor((difference / 1000 / 60) % 60),
+                    seconds: Math.floor((difference / 1000) % 60),
                 };
             }
             return timeLeft;
@@ -197,13 +197,13 @@ export default function Hero() {
                                     className="space-y-2"
                                 >
                                     <p className="text-gray-500 font-serif italic text-sm">
-                                        Kepada Yth.
+                                        Dear Guest,
                                     </p>
                                     <p className="text-gray-600 font-medium text-sm">
-                                        Bapak/Ibu/Saudara/i
+                                        Family & Friends
                                     </p>
                                     <p className="text-rose-500 font-semibold text-lg">
-                                        {guestName || "Tamu Undangan"}
+                                        {guestName || "Invited Guest"}
                                     </p>
                                 </motion.div>
                             </div>
