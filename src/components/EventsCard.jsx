@@ -159,18 +159,7 @@ END:VCALENDAR`;
           </div>
           <div className="flex items-center space-x-3">
             <MapPin className="w-5 h-5 text-rose-500" />
-            {eventData.venueLink ? (
-              <a
-                href={eventData.venueLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-rose-500 hover:text-rose-600 underline transition-colors"
-              >
-                {eventData.location}
-              </a>
-            ) : (
-              <span>{eventData.location}</span>
-            )}
+            <span>{eventData.location}</span>
           </div>
         </div>
       </motion.div>
