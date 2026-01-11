@@ -1,4 +1,4 @@
-# Sakeenah: Modern Islamic Wedding Invitation
+# Sam & Feb: Modern Islamic Wedding Invitation
 
 ![Preview](public/preview.png)
 
@@ -50,10 +50,10 @@ A modern, interactive wedding invitation website built with Vite (React), Tailwi
 2. Set up the database:
    ```bash
    # Create PostgreSQL database
-   createdb sakeenah
+   createdb Sam & Feb
 
    # Run the schema (create tables)
-   psql -d sakeenah -f src/server/db/schema.sql.example
+   psql -d Sam & Feb -f src/server/db/schema.sql.example
    ```
 
 3. Configure environment variables:
@@ -68,7 +68,7 @@ A modern, interactive wedding invitation website built with Vite (React), Tailwi
    VITE_INVITATION_UID=your-unique-invitation-id
 
    # Backend
-   DATABASE_URL=postgresql://username:password@localhost:5432/sakeenah
+   DATABASE_URL=postgresql://username:password@localhost:5432/Sam & Feb
    PORT=3000
    ```
 
@@ -78,7 +78,7 @@ A modern, interactive wedding invitation website built with Vite (React), Tailwi
    cp src/server/db/add-wedding.sql.example src/server/db/my-wedding.sql
 
    # Edit my-wedding.sql with your details, then run:
-   psql -d sakeenah -f src/server/db/my-wedding.sql
+   psql -d Sam & Feb -f src/server/db/my-wedding.sql
    ```
 
 5. Start the development servers:
@@ -154,7 +154,7 @@ Add wedding data via SQL (supports multiple weddings):
 
 3. Insert into database:
    ```bash
-   psql -d sakeenah -f my-wedding.sql
+   psql -d Sam & Feb -f my-wedding.sql
    ```
 
 ### Static Config (Fallback)
@@ -365,7 +365,7 @@ VITE_API_URL=https://your-api-domain.com
 VITE_INVITATION_UID=default-wedding-uid
 
 # Backend
-DATABASE_URL=postgresql://user:pass@your-db-host:5432/sakeenah
+DATABASE_URL=postgresql://user:pass@your-db-host:5432/Sam & Feb
 PORT=3000
 ```
 
@@ -404,7 +404,7 @@ wrangler login
 
 ```bash
 # Replace with your actual PostgreSQL connection string
-wrangler hyperdrive create sakeenah-db \
+wrangler hyperdrive create Sam & Feb-db \
   --connection-string="postgresql://username:password@host:port/database"
 ```
 
@@ -490,7 +490,7 @@ No code changes needed between environments!
 wrangler tail
 
 # Check Hyperdrive connection
-wrangler hyperdrive get sakeenah-db
+wrangler hyperdrive get Sam & Feb-db
 
 # Test deployment status
 wrangler deployments list
