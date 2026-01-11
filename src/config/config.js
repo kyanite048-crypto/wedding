@@ -1,20 +1,20 @@
 const config = {
   data: {
     // Main invitation title that appears on the page
-    title: "Pernikahan Fulan & Fulana",
+    title: "Sam & Feb",
     // Opening message/description of the invitation
     description:
-      "Kami akan menikah dan mengundang Anda untuk turut merayakan momen istimewa ini.", // Nanti ini dibikin random
+      "We are getting married and invite you to celebrate this special moment with us.",
     // Groom's name
-    groomName: "Fulan",
+    groomName: "Sam",
     // Bride's name
-    brideName: "Fulana",
+    brideName: "Feb",
     // Groom's parents names
     parentGroom: "Bapak Groom & Ibu Groom",
     // Bride's parents names
     parentBride: "Bapak Bride & Ibu Bride",
     // Wedding date (format: YYYY-MM-DD)
-    date: "2024-12-24",
+    date: "2026-01-25",
     // Google Maps link for location (short clickable link)
     maps_url: "https://goo.gl/maps/abcdef",
     // Google Maps embed code to display map on website
@@ -37,7 +37,7 @@ const config = {
         // First event name
         title: "Akad Nikah",
         // Event date (format: YYYY-MM-DD)
-        date: "2024-12-24",
+        date: "2026-01-25",
         // Start time (format: HH:MM)
         startTime: "16:16",
         // End time (format: HH:MM)
@@ -50,7 +50,7 @@ const config = {
       {
         // Second event name
         title: "Resepsi Nikah",
-        date: "2024-12-24",
+        date: "2026-01-25",
         startTime: "16:16",
         endTime: "17:30",
         location: "Grand Ballroom, Hotel Majesty",
@@ -79,12 +79,12 @@ const config = {
         // Account number
         accountNumber: "1234567890",
         // Account holder name (all uppercase)
-        accountName: "FULAN",
+        accountName: "SAM",
       },
       {
         bank: "Bank Mandiri",
         accountNumber: "0987654321",
-        accountName: "FULANA",
+        accountName: "FEB",
       }
       // You can add more banks with the same format
     ]
