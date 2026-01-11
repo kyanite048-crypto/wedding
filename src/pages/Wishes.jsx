@@ -57,7 +57,7 @@ export default function Wishes() {
     // Fetch wishes on component mount
     useEffect(() => {
         if (!uid) {
-            setError('Invitation UID not found. Please check your URL.');
+            setError('Invitation not found. Please check your link.');
             setIsLoading(false);
             return;
         }
@@ -85,7 +85,7 @@ export default function Wishes() {
         if (!newWish.trim() || !guestName.trim()) return;
 
         if (!uid) {
-            alert('Invitation UID not found. Please check your URL.');
+            alert('Invitation not found. Please check your link.');
             return;
         }
 
@@ -277,11 +277,11 @@ export default function Wishes() {
                                 <div className="space-y-2">
                                     <div className="flex items-center space-x-2 text-gray-500 text-sm mb-1">
                                         <User className="w-4 h-4" />
-                                        <span>Nama Kamu</span>
+                                        <span>Your Name</span>
                                     </div>
                                     <input
                                         type="text"
-                                        placeholder="Masukan nama kamu..."
+                                        placeholder="Enter your name..."
                                         value={guestName}
                                         onChange={(e) => setGuestName(e.target.value)}
                                         className="w-full px-4 py-2.5 rounded-xl bg-white/50 border border-rose-100 focus:border-rose-300 focus:ring focus:ring-rose-200 focus:ring-opacity-50 transition-all duration-200 text-gray-700 placeholder-gray-400"
@@ -289,7 +289,7 @@ export default function Wishes() {
                                     />
                                     {guestName && (
                                         <p className="text-xs text-gray-500 italic">
-                                            Terdeteksi dari undangan Anda. Anda dapat mengubahnya jika perlu.
+                                            Detected from your invitation. You can change it if needed.
                                         </p>
                                     )}
                                 </div>
@@ -313,7 +313,7 @@ export default function Wishes() {
                                         <span className={attendance ? 'text-gray-700' : 'text-gray-400'}>
                                             {attendance ?
                                                 options.find(opt => opt.value === attendance)?.label
-                                                : 'Select attendance...'}
+                                                : 'Select your response...'}
                                         </span>
                                         <ChevronDown
                                             className={`w-5 h-5 text-gray-400 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''
@@ -370,7 +370,7 @@ export default function Wishes() {
                             <div className="flex items-center justify-between mt-4">
                                 <div className="flex items-center space-x-2 text-gray-500">
                                     <Smile className="w-5 h-5" />
-                                    <span className="text-sm">Berikan Doa Anda</span>
+                                    <span className="text-sm">Leave Your Message</span>
                                 </div>
                                 <motion.button
                                     type="submit"
@@ -387,7 +387,7 @@ export default function Wishes() {
                                     ) : (
                                         <Send className="w-4 h-4" />
                                     )}
-                                    <span>{isSubmitting ? 'Sending...' : 'Send Prayer'}</span>
+                                    <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
                                 </motion.button>
                             </div>
                         </div>

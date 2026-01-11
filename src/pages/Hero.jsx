@@ -121,7 +121,7 @@ export default function Hero() {
                         className="inline-block mx-auto"
                     >
                         <span className="px-4 py-1 text-sm bg-rose-50 text-rose-600 rounded-full border border-rose-200">
-                            Catat Tanggal Penting Ini
+                            Save This Important Date
                         </span>
                     </motion.div>
 
@@ -132,7 +132,7 @@ export default function Hero() {
                             transition={{ delay: 0.4 }}
                             className="text-gray-500 font-light italic text-base sm:text-lg"
                         >
-                            InsyaAllah Kami Akan Menikah
+                            God willing, we will be married
                         </motion.p>
                         <motion.h2
                             initial={{ scale: 0.8, opacity: 0 }}
