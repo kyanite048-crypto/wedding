@@ -1,0 +1,20 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { 
+      font-family: 'Playfair Display', serif; 
+      font-size: 24px; 
+      fill: #2c3e50;
+      font-weight: 400;
+    }
+    .ampersand {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      fill: #e74c3c;
+      font-style: italic;
+    }
+  </style>
+  <text x="10" y="35" class="title">Sam</text>
+  <text x="65" y="35" class="ampersand">&amp;</text>
+  <text x="85" y="35" class="title">Feb</text>
+  <text x="10" y="50" style="font-family: 'Playfair Display', serif; font-size: 12px; fill: #7f8c8d; font-style: italic;">January 25, 2026</text>
+</svg>
