@@ -35,30 +35,26 @@ const config = {
     agenda: [
       {
         // First event name
-        title: "The Holy Matrimony Wedding Ceremony",
+        title: "Wedding Ceremony",
         // Event date (format: YYYY-MM-DD)
         date: "2026-01-25",
         // Start time (format: HH:MM)
-        startTime: "08:00",
+        startTime: "16:16",
         // End time (format: HH:MM)
-        endTime: "10:00",
+        endTime: "17:30",
         // Event venue
-        location: "Bole Kale Hiwot Church",
+        location: "Grand Ballroom, Sheraton Addis",
         // Full address
-        address: "Addis Ababa, Ethiopia",
-        // Venue link (Google Maps)
-        venueLink: "https://www.google.com/maps/place/Bole+Kale+Hiwot+Church+%7C+%E1%89%A6%E1%88%8C+%E1%89%83%E1%88%88+%E1%88%95%E1%8B%AD%E1%8B%88%E1%89%B5+%E1%89%A4%E1%89%B0+%E1%8A%AD%E1%88%AD%E1%88%B5%E1%89%B2%E1%8B%AB%E1%8A%95/@8.9790758,38.7734932,866m/data=!3m2!1e3!4b1!4m6!3m5!1s0x164b85a8c15e65ff:0x313f36494eb7845b!8m2!3d8.9790705!4d38.7760681!16s%2Fg%2F11rj_hqm82",
+        address: "Kirkos Subcity, Addis Ababa, Ethiopia",
       },
       {
         // Second event name
-        title: "Wedding Dinner Program",
+        title: "Wedding Reception",
         date: "2026-01-25",
-        startTime: "12:00",
-        endTime: "16:00",
-        location: "Bihere Tsige Public Park",
-        address: "Addis Ababa, Ethiopia",
-        // Venue link (Google Maps)
-        venueLink: "https://www.google.com/maps/place/Bihere+Tsige+Park/@8.9565931,38.750713,866m/data=!3m2!1e3!4b1!4m6!3m5!1s0x164b830035bba0f7:0x9a187e441e905b65!8m2!3d8.9565878!4d38.7532879!16s%2Fg%2F11x092m4k0",
+        startTime: "16:16",
+        endTime: "17:30",
+        location: "Grand Ballroom, Sheraton Addis",
+        address: "Kirkos Subcity, Addis Ababa, Ethiopia",
       }
       // You can add more agenda items with the same format
     ],
