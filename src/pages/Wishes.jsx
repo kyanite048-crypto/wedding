@@ -57,7 +57,7 @@ export default function Wishes() {
     // Fetch wishes on component mount
     useEffect(() => {
         if (!uid) {
-            setError('Invitation not found. Please check your link.');
+            setError('This is the day the Lord has made; let us rejoice and be glad in it.');
             setIsLoading(false);
             return;
         }
@@ -85,7 +85,7 @@ export default function Wishes() {
         if (!newWish.trim() || !guestName.trim()) return;
 
         if (!uid) {
-            alert('Invitation not found. Please check your link.');
+            alert('This is the day the Lord has made; let us rejoice and be glad in it.');
             return;
         }
 

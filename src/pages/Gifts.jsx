@@ -79,7 +79,7 @@ export default function Gifts() {
                     >
                         {/* Main Message */}
                         <p className="text-gray-600 leading-relaxed">
-                            Your presence means the world to us. For those who wish to give a gift, we've provided a few convenient options below.
+                            Every good and perfect gift is from above, coming down from the Father of lights.
                         </p>
 
                         {/* Mobile Money Section */}
